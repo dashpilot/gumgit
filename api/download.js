@@ -14,10 +14,10 @@ export default async function handler(request, response) {
   
 api
   .getUserSales({ request.query.sale_id })
-  .then((response) => {
+  .then((res) => {
   
-    console.log('license verified');
-    console.log(response);
+    console.log('sale verified');
+    console.log(res);
 
     var filenames = fs.readdirSync(dir);
     filenames.forEach(file => {
