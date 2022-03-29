@@ -36,7 +36,7 @@ const api = new Gumnode({
   .catch((res) => console.log("Error:", res.message));
   */
   
-res.end('ok')
+response.end('ok')
   
  
   
