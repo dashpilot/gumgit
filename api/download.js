@@ -17,7 +17,6 @@ console.log(request.query.sale_id);
   .getUserSales({sale_id: request.query.sale_id})
   .then((res) => {
   
-    console.log('sale verified');
     console.log(res);
 
     var filenames = fs.readdirSync(dir);
@@ -35,7 +34,7 @@ console.log(request.query.sale_id);
 })
   .catch((res) => {
     console.log("Error:", res.message)
-    response.end('error')
+    response.end('Error: '+res.message)
   });
 
   
