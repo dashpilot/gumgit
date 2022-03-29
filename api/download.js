@@ -3,14 +3,13 @@ var AdmZip = require("adm-zip");
 var zip = new AdmZip();
 const Gumnode = require("gumnode");
 
-const api = new Gumnode({
-  access_token: process.env.GR_TOKEN,
-});
-
 const dir = "./dist/";
 
 export default async function handler(request, response) {
   
+const api = new Gumnode({
+  access_token: process.env.GR_TOKEN,
+});
   
 api
   .getUserSales({ request.query.sale_id })
@@ -32,7 +31,7 @@ api
     response.end(buffer);
   
 })
-  .catch((response) => console.log("Error:", response.message));
+  .catch((res) => console.log("Error:", res.message));
   
  
   
