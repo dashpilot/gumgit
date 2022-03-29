@@ -11,7 +11,7 @@ const api = new Gumnode({
   access_token: process.env.GR_TOKEN
 });
   
-
+console.log(request.query.sale_id);
 
   api
   .getUserSales(request.query.sale_id)
