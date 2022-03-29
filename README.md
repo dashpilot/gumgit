@@ -1,5 +1,5 @@
 # gumgit
-Sell software straight from your private Github repo, payment via Gumroad, deployment via Vercel
+Sell software straight from your private Github repo. Payment via Gumroad, deployment via Vercel
 
 ## How To
 
