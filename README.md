@@ -4,7 +4,7 @@ Sell software straight from your private Github repo, payment via Gumroad, deplo
 ## How To
 
 1. In Gumroad, create a new application: https://app.gumroad.com/settings/advanced and an access token
-2. Clone this repo and deploy it to Vercel, create an environment variable `GR_TOKEN` with the access token you received in step one
+2. Clone this repo and deploy it to Vercel, create an environment variable `GR_TOKEN` with the Gumroad access token you received in step one
 3. Create a new product on Gumroad and choose `redirect to URL after purchase` as the delivery method
 4. Set the URL to https://{your-project-name}.vercel.app/api/download
 5. Done! All files in the `dist`-folder will automatically be zipped and downloaded once a user purchases your product!
