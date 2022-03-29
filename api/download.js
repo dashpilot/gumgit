@@ -7,7 +7,12 @@ const dir = "./dist/";
 
 export default async function handler(request, response) {
   
-response.end('hi');
+const api = new Gumnode({
+  access_token: process.env.GR_TOKEN,
+});
+  
+res.end('hi')
+  
  
   
 }
