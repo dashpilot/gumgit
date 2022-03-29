@@ -14,7 +14,7 @@ const api = new Gumnode({
 console.log(request.query.sale_id);
 
   api
-  .getUserSales(request.query.sale_id)
+  .getUserSales({sale_id: request.query.sale_id})
   .then((res) => {
   
     console.log('sale verified');
