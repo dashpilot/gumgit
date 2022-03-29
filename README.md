@@ -1,2 +1,2 @@
 # gumgit
-Sell software straight from your Github repo, payment via Gumroad
+Sell software straight from your private Github repo, payment via Gumroad
