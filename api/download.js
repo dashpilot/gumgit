@@ -11,8 +11,8 @@ const api = new Gumnode({
   access_token: process.env.GR_TOKEN
 });
   
-  /*
-  
+
+
   api
   .getUserSales({ request.query.sale_id })
   .then((res) => {
@@ -33,10 +33,13 @@ const api = new Gumnode({
     response.end(buffer);
   
 })
-  .catch((res) => console.log("Error:", res.message));
-  */
+  .catch((res) => {
+    console.log("Error:", res.message)
+    response.end('error')
+  });
+
   
-response.end('ok')
+
   
  
   
